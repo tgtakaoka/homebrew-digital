@@ -7,6 +7,8 @@ class Digital < Formula
   depends_on "maven" => :build
 
   def install
+    # https://stackoverflow.com/a/53016532 but can't fix test error
+    ENV["_JAVA_OPTIONS"] += " -Djdk.net.URLClassPath.disableClassPathURLCheck=true"
     system "mvn", "package"
 
     (libexec/"bin").install "target/Digital.jar"
