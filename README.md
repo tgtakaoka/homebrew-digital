@@ -8,6 +8,7 @@ To get everything, execute the following commands.
 
     $ brew tap tgtakaoka/digital
     $ brew install --HEAD digital
+    # then launch Digital command in X-Window environment
 
 [Homebrew]: https://brew.sh/
 [Digital]: https://github.com/hneemann/Digital
