@@ -1,13 +1,13 @@
 class Digital < Formula
   desc "Digital logic designer and circuit simulator"
   homepage "https://github.com/hneemann/Digital"
-  url "https://github.com/hneemann/Digital.git", :tag => "v0.24"
+  url "https://github.com/hneemann/Digital.git", :tag => "v0.25"
 
   head do
     url "https://github.com/hneemann/Digital.git", :shallow => false
   end
 
-  depends_on "openjdk"
+  depends_on "openjdk@11"
 
   def install
     system "mvn", "package"
