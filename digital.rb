@@ -7,7 +7,7 @@ class Digital < Formula
     url "https://github.com/hneemann/Digital.git", :shallow => false
   end
 
-  depends_on :java => "1.7+"
+  depends_on "openjdk"
 
   def install
     system "mvn", "package"
